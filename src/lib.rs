@@ -6,10 +6,10 @@ use rocket::{
     http::{Cookie, Method, Status, uri},
     request::{FromRequest, Outcome},
     route::{self, Handler, Route},
-    time::{Duration, OffsetDateTime},
     Data, Request, Rocket, State,
 };
 use std::borrow::Cow;
+use time::{Duration, OffsetDateTime};
 
 const COOKIE_NAME: &str = "csrf_token";
 const _PARAM_NAME: &str = "authenticity_token";
